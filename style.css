@@ -73,7 +73,6 @@ h1, h2, h3 {
 .btn-primary {
     background-color: var(--color-secondary); 
     color: var(--color-text-light);
-    text-decoration: none;
     padding: 15px 40px;
     border-radius: 8px; 
     font-weight: 700;
@@ -82,6 +81,7 @@ h1, h2, h3 {
     display: inline-block;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -142,6 +142,64 @@ footer {
     margin-bottom: 30px;
     color: var(--color-text-dark);
 }
+
+/* --- SECCIÓN DE PRUEBA SOCIAL --- */
+.social-proof-section {
+    padding: 50px 5%;
+    background-color: #f7f7f7; 
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.social-proof-section h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s;
+    border-top: 3px solid var(--color-secondary); 
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+}
+
+.quote-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.testimonial-card .source {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-style: normal;
+}
+
 
 /* --- SECCIÓN DE SERVICIOS PREMIUM --- */
 
@@ -364,6 +422,42 @@ footer {
     font-size: 1rem;
 }
 
+/* --- BOTÓN FLOTANTE DE WHATSAPP (STICKY CTA) --- */
+
+/* Regla para ocultar el botón por defecto en el ESCRITORIO */
+.whatsapp-float-cta {
+    display: none;
+}
+
+.whatsapp-float-cta {
+    /* Posicionamiento Fijo */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    /* Estilo del Botón */
+    background-color: #25D366; /* Verde WhatsApp */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px; /* Borde redondeado */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Para centrar ícono y texto */
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    transition: background-color 0.3s;
+}
+
+.whatsapp-float-cta:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
 
 /* --- ADAPTACIÓN RESPONSIVE FINAL --- */
 @media (max-width: 768px) {
@@ -383,5 +477,12 @@ footer {
     }
     .service-card {
         max-width: 90%;
+    }
+    
+    /* Regla para MOSTRAR el botón SOLO cuando el ancho de la pantalla es pequeño (Móvil) */
+    .whatsapp-float-cta {
+        display: flex; 
+        bottom: 15px;
+        right: 15px;
     }
 }
