@@ -29,6 +29,13 @@ h1, h2, h3 {
     color: var(--color-primary);
 }
 
+/* --- ESTILO GLOBAL DE ENLACES (NUEVO) --- */
+a {
+    text-decoration: none; /* ELIMINA EL SUBRAYADO POR DEFECTO */
+    color: var(--color-primary); /* Color base para enlaces de texto sueltos */
+    transition: color 0.3s ease;
+}
+
 /* --- ESTILOS DE LA CABECERA Y NAVEGACIÓN --- */
 
 .main-header {
@@ -56,7 +63,7 @@ h1, h2, h3 {
 
 .main-nav a {
     color: var(--color-text-light);
-    text-decoration: none;
+    /* text-decoration: none; está en el estilo global */
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -290,7 +297,7 @@ footer {
     background-color: var(--color-background);
 }
 .video-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .video-placeholder {
