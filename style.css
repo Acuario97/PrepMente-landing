@@ -143,7 +143,7 @@ footer {
     color: var(--color-text-dark);
 }
 
-/* --- SECCIÓN DE PRUEBA SOCIAL --- */
+/* --- SECCIÓN DE PRUEBA SOCIAL (CORREGIDO) --- */
 .social-proof-section {
     padding: 50px 5%;
     background-color: #f7f7f7; 
@@ -184,6 +184,7 @@ footer {
     font-size: 2rem;
     display: block;
     margin-bottom: 15px;
+    color: var(--color-primary); /* Damos un color para que destaque */
 }
 
 .testimonial-card p {
@@ -321,7 +322,7 @@ footer {
     font-weight: 600;
 }
 
-/* --- ESTILOS DE BOTONES DE REDES SOCIALES (ACTUALIZADOS) --- */
+/* --- ESTILOS DE BOTONES DE REDES SOCIALES --- */
 .social-icons {
     margin-top: 20px;
     display: flex;
