@@ -494,3 +494,13 @@ footer {
         right: 15px;
     }
 }
+/* --- CORRECCIÓN DE SUBRAYADO EN ENLACES DE VIDEO PLACEHOLDER --- */
+.video-placeholder a {
+    text-decoration: none !important; /* Fuerza la eliminación del subrayado */
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+/* También puedes querer un efecto al pasar el ratón si no lo tiene */
+.video-placeholder a:hover {
+    opacity: 0.8; /* Ligeramente más transparente al pasar el ratón */
+}
