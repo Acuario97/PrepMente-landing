@@ -1,0 +1,386 @@
+/* 1. Importar las fuentes recomendadas */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* 2. Variables CSS para la paleta de color */
+:root {
+    --color-primary: #004AAD; /* Azul Océano - Confiabilidad */
+    --color-secondary: #4CAF50; /* Verde Esmeralda - Crecimiento / Acción */
+    --color-text-light: #F8F9FA;
+    --color-text-dark: #333333;
+    --color-background: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-text-dark);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+/* Estilo para Títulos */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--color-primary);
+}
+
+/* --- ESTILOS DE LA CABECERA Y NAVEGACIÓN --- */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-light);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--color-secondary);
+}
+
+.cta-nav {
+    /* Mantiene el espacio en la derecha */
+}
+
+/* --- ESTILOS DE BOTONES GENERALES --- */
+.btn-primary {
+    background-color: var(--color-secondary); 
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 8px; 
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #5CB85C; 
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+.btn-secondary.small-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
+/* --- ESTILOS DEL FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px 5%;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+/* --- ESTILOS DE LA SECCIÓN HERO --- */
+
+.hero-section {
+    background-color: var(--color-text-light);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: var(--color-text-dark);
+}
+
+/* --- SECCIÓN DE SERVICIOS PREMIUM --- */
+
+.premium-services {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--color-background);
+}
+
+.premium-services h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: var(--color-text-light);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    border-top: 5px solid var(--color-primary);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    min-height: 45px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* --- SECCION DE CONEXIÓN CON CONTENIDO --- */
+
+.content-connect-section {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--color-text-light);
+}
+
+.youtube-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background-color: var(--color-background);
+}
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-placeholder {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.high-level { background-color: #3f51b5; }
+.mid-level { background-color: #00bcd4; }
+.low-level { background-color: #ff9800; }
+
+.video-card h4 {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: var(--color-primary);
+    min-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.social-cta {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* --- ESTILOS DE BOTONES DE REDES SOCIALES (ACTUALIZADOS) --- */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.icon-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: opacity 0.3s, transform 0.2s;
+    font-size: 1rem;
+    min-width: 130px; 
+    text-align: center;
+}
+
+/* Colores de Marca Específicos */
+.youtube-icon { background-color: #FF0000; }
+.instagram-icon { background-color: #E4405F; }
+.tiktok-icon { background-color: #000000; }
+.facebook-icon { background-color: #1877F2; }
+
+.icon-link:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); 
+}
+
+/* --- SECCION DE CONTACTO SIMPLIFICADO --- */
+
+.contact-section-simple {
+    padding: 60px 5%;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.contact-section-simple h2 {
+    margin-bottom: 10px;
+}
+
+.contact-card-simple {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: var(--color-text-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-simple h4 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.contact-card-simple p {
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp-large {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp-large:hover {
+    background-color: #128C7E;
+}
+
+.or-separator {
+    margin: 20px 0 10px 0;
+    color: #999;
+}
+
+.lead-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.lead-form .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+
+/* --- ADAPTACIÓN RESPONSIVE FINAL --- */
+@media (max-width: 768px) {
+    .video-card {
+        width: 100%;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+    }
+    .icon-link {
+        margin-bottom: 10px;
+        min-width: 45%;
+    }
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        max-width: 90%;
+    }
+}
