@@ -29,7 +29,7 @@ h1, h2, h3 {
     color: var(--color-primary);
 }
 
-/* --- ESTILO GLOBAL DE ENLACES (NUEVO) --- */
+/* --- ESTILO GLOBAL DE ENLACES --- */
 a {
     text-decoration: none; /* ELIMINA EL SUBRAYADO POR DEFECTO */
     color: var(--color-primary); /* Color base para enlaces de texto sueltos */
@@ -63,7 +63,6 @@ a {
 
 .main-nav a {
     color: var(--color-text-light);
-    /* text-decoration: none; está en el estilo global */
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -493,14 +492,4 @@ footer {
         bottom: 15px;
         right: 15px;
     }
-}
-/* --- CORRECCIÓN DE SUBRAYADO EN ENLACES DE VIDEO PLACEHOLDER --- */
-.video-placeholder a {
-    text-decoration: none !important; /* Fuerza la eliminación del subrayado */
-    color: white; /* Asegura que el texto sea blanco */
-}
-
-/* También puedes querer un efecto al pasar el ratón si no lo tiene */
-.video-placeholder a:hover {
-    opacity: 0.8; /* Ligeramente más transparente al pasar el ratón */
 }
